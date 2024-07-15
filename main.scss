@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$back-left-color: #696969;
+$content-left-color: white;
+$circle-empty-left-color: grey;
+$content-right-color: black;
+$circle-empty-right-color: #b9b8b8;
+$main-font: "NotoSerif", serif;
+
+body {
+    font-family: $main-font;
+}
+
+h2{
+    font-size: 120%;
+}
+    
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.center{
+    text-align: center;
+}
+
+.content-text{
+    font-size: 80%;
+}
+
+.container {
+    justify-content: space-between;
+    align-items: stretch;
+    height: 90vh;
+    margin: 3% 30%;
+    box-shadow: 15px 12px 8px rgba(34, 60, 80, 0.2);
+
+    .circle{
+        border-radius: 50%;
+        height: 1.5vh;
+        width: 1.5vh;
+    }
+    
+    .photo-container{
+        img{
+            border-radius: 50%;
+            width: 80%;
+        }
+    }
+    
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #experience-section{
+        .grid-container{
+            gap: 6% 5%;
+        }
+    }
+    
+    #skills-section{
+        .grid-container{
+            gap: 25% 25%;
+        }
+    }
+    
+    .content-container{
+        margin-top: 10%;
+    }
+    
+    .line{
+        margin-bottom: 3%;
+    }
+    
+    .skills{
+        margin-right: auto;
+    }
+    
+    .circles-container{
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 5%;
+    }
+
+    .left{
+        background-color: $back-left-color;
+        width: 30%;
+        padding: 5%;
+
+        p{
+            color: $content-left-color;
+        }
+
+        h2{
+            color: $content-left-color;
+            margin-top: 20%;
+        }
+
+        .circle{
+            &.full{
+                background-color: $content-left-color;
+            }
+        
+            &.empty{
+                background-color: $circle-empty-left-color;
+            }
+        }
+    }
+
+    .right{
+        width: 70%;
+        padding: 5%;
+
+        h2{
+            color: $content-right-color;
+            margin-top: 14%;
+        }
+
+        .circle{
+            &.full{
+                background-color: $content-right-color;
+            }
+        
+            &.empty{
+                background-color: $circle-empty-right-color;
+            }
+        }
+    }
+}
