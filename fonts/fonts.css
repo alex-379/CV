@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'NotoSerif';
+    font-weight: 400;
+    src: url(NotoSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'NotoSerif';
+    font-weight: 700;
+    src: url(NotoSerif-Bold.ttf);
+}
